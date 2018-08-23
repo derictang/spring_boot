@@ -1,0 +1,40 @@
+<html xmlns="http://thymeleaf.org">
+
+    <head>
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css"></link>
+        <link th:href="@{/css/layout.css}" rel="stylesheet" type="text/css"></link>
+    </head>
+
+    <body>
+
+        <script type="text/javascript" th:src="@{/js/jquery-3.1.0.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+        <div class="container">
+            <h2>Submitted Information</h2>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td>${name}</td>
+                </tr>
+                <tr>
+                    <td>ID :</td>
+                    <td>${id}</td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td>${address}</td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td>${age}</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth :</td>
+                    <td>${dob}</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+
+</html>

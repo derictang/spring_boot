@@ -1,0 +1,71 @@
+<html xmlns="http://thymeleaf.org">
+
+    <head>
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css"></link>
+        <link th:href="@{/css/layout.css}" rel="stylesheet" type="text/css"></link>
+    </head>
+
+    <body>
+        <div class="container">
+            <form class="form-horizontal" method="POST" action="/javapointers" modelAttribute="data">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Welcome to Spring Boot Demo, please provide the following details</legend>
+
+                    <!-- Text input-->
+                    <input type="hidden" name="paramName" value="1"/>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="name">Name</label>
+                        <div class="col-md-4">
+                            <input id="name" name="name" type="text" class="form-control input-md" required=""/>
+
+                        </div>
+                    </div>
+
+                    <!-- Address input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="address">Address</label>
+                        <div class="col-md-4">
+                            <input id="address" name="address" type="text" class="form-control input-md" required=""/>
+
+                        </div>
+                    </div>
+
+                    <!-- Age input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="age">Age</label>
+                        <div class="col-md-4">
+                            <input id="age" name="age" type="text" class="form-control input-md" required=""/>
+
+                        </div>
+                    </div>
+
+                    <!-- Date of birth input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="dob">Data of Birth</label>
+                        <div class="col-md-4">
+                            <input id="dob" name="dob" type="text" class="form-control input-md" required=""/>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="submit"></label>
+                        <div class="col-md-4">
+                            <button id="submit" name="submit" class="btn btn-primary btn-login">Submit</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <script type="text/javascript" th:src="@{/js/jquery-3.1.0.min.js}"></script>
+            <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+        </div>
+    </body>
+
+</html>
